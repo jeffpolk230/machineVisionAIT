@@ -8,7 +8,7 @@ capture = cv.CaptureFromCAM(0)
 i=0
 while True:
     img = cv.QueryFrame(capture)
-    cv.putText(img, "Press s for snap, Esc to quit")
+#    cv.putText(img, "Press s for snap, Esc to quit")
     cv.ShowImage("camera", img)
     if cv.WaitKey(1) == ord('s'):
     	print "snaped!"
